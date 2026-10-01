@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic records only. The values under sensitive fields must never appear in default aggregate output.",
+  "records": [
+    {
+      "date": "2026-09-30",
+      "agent": "example-agent",
+      "model": "example-model",
+      "input_tokens": 1200,
+      "output_tokens": 300,
+      "cached_tokens": 100,
+      "prompt_text": "SYNTHETIC PROMPT: private draft text",
+      "file_path": "C:/synthetic/private/draft.md",
+      "session_id": "synthetic-session-001",
+      "credential_hint": "synthetic-credential-never-real"
+    },
+    {
+      "date": "2026-09-30",
+      "agent": "example-agent",
+      "model": "example-model",
+      "input_tokens": 800,
+      "output_tokens": 200,
+      "cached_tokens": 50,
+      "prompt_text": "SYNTHETIC PROMPT: another private draft",
+      "file_path": "C:/synthetic/private/notes.txt",
+      "session_id": "synthetic-session-002",
+      "credential_hint": "synthetic-credential-never-real-2"
+    }
+  ],
+  "expected_default_aggregate": {
+    "collection_window": {
+      "start": "2026-09-30",
+      "end": "2026-09-30"
+    },
+    "records_included": 2,
+    "by_date_agent_model": [
+      {
+        "date": "2026-09-30",
+        "agent": "example-agent",
+        "model": "example-model",
+        "input_tokens": 2000,
+        "output_tokens": 500,
+        "cached_tokens": 150
+      }
+    ]
+  }
+}

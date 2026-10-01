@@ -43,6 +43,18 @@ It must not require a Starlight wrapper, brand identity, subscription details, l
 **Done condition / proof:** a reproducible, synthetic redaction fixture runs locally and shows that default aggregate output excludes prompt text, paths, IDs, and credentials; current upstream evidence explicitly identifies every supported runtime.
 **Decision / kill criterion:** ship a standalone T1 skill only if both proofs are present. Otherwise retain this reference as the portable artifact and close packaging work for this cycle—do not publish a collector based on inference from similarly named tools.
 
+### Synthetic redaction proof — 2026-10-01
+
+`fixtures/ai-usage-telemetry-redaction-fixture.json` contains synthetic-only source records with prompt text, paths, session IDs, and credential hints. Its stdlib-only verifier projects only date, agent, model, and numeric token totals, then proves the default aggregate matches the expected output while excluding every sensitive fixture value.
+
+Run through `terminal`:
+
+```python
+terminal(command="python3 docs/skill-portfolio-os/packs/scripts/verify_ai_usage_telemetry_redaction.py")
+```
+
+A passing fixture closes only the reproducible-redaction-fixture sub-gate. It does **not** validate a live parser, establish current upstream runtime support, or authorize a standalone collector.
+
 These projects are examples, not endorsed defaults. Re-check license, release, source coverage, data handling, and package integrity at implementation time.
 
 ## Promotion gate: standalone free skill
