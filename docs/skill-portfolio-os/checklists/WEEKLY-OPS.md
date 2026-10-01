@@ -13,5 +13,6 @@
 - [ ] Verify registry candidate/stub paths in the active profile before reporting their installed state; only exact evidence can confirm a redirect/absorb, while missing or full legacy pages remain T0/T4 migration work
 - [ ] When category nesting makes a filename glob non-diagnostic, search installed `SKILL.md` front matter for the exact `name:` before calling a candidate absent; a directory-name miss is not exact-path evidence
 - [ ] For a present legacy page, record its SHA-256 and canonical comparator; exact-path inspection alone determines redirect versus full-copy status
+- [ ] Treat a candidate as a legacy full copy unless its body is a minimal canonical redirect; validate every executable command independently before absorbing content into an umbrella or public pack
 - [ ] No broad user-profile or drive-root recursive searches ran on Frank host this week
 - [ ] Before writing a date-keyed Queen report, read any existing file and append a profile-labelled section rather than overwrite sibling-cron evidence.
