@@ -1,6 +1,6 @@
 ---
 name: todo-discipline
-description: "Use when starting any complex task (3+ steps) or before declaring work complete. Enforces todo/task state to match reality — merge updates + read verification. Prevents false completion."
+description: Keep task-list state aligned with completed work.
 version: 1.0.0
 author: Frank Riemer / GenCreator
 license: MIT
@@ -17,6 +17,10 @@ metadata:
 
 Agents often create task lists, do the work, then conclude while the UI still shows **0/N done**. This skill makes **task state = reality** a hard gate.
 
+## Purpose
+
+Reconcile the task list with completed work before handing off or claiming completion.
+
 ## When to Use
 
 - Complex tasks with 3+ steps  
@@ -24,6 +28,27 @@ Agents often create task lists, do the work, then conclude while the UI still sh
 - Before any “done”, handover, or “battle-tested” claim  
 
 **Don't use for:** single-step Q&A.
+
+## Inputs
+
+- The current task list and its item identifiers
+- Evidence of which tasks are complete, active, or blocked
+
+## Outputs
+
+- Updated statuses for completed items
+- A fresh read of the task list confirming the final state
+
+## Required tools
+
+- The host's task-list tool, with item-level status updates and a read-back operation
+
+## Safety boundaries
+
+- Preserve existing items and history; update only items whose state changed.
+- Never clear a list by sending an empty replacement or merge payload.
+- Do not mark work complete without evidence or claim the list is verified without reading it back.
+- Use only operations supported by the host; argument names and merge behavior vary.
 
 ## Hard gate
 
@@ -48,6 +73,15 @@ Treat the **read result** as ground truth if merge responses echo stale state (c
 - [ ] No stale in_progress when claiming done  
 - [ ] Read-back confirmed  
 - [ ] User-visible task counter matches reality  
+
+## Provenance
+
+Frank Riemer / GenCreator, `frankx-public` free pack. The workflow is a portable checklist, not a Hermes engine feature guarantee.
+
+## Related resources
+
+- [Hermes skill authoring docs](https://hermes-agent.nousresearch.com/docs/developer-guide/creating-skills)
+- [Hermes operator guidance](https://github.com/frankxai/awesome-hermes-agents)
 
 ## License
 

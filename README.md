@@ -19,6 +19,12 @@
 > Independent curation. **Not** official Nous Research.  
 > Official skill docs: [Skills](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills) · [Creating skills](https://hermes-agent.nousresearch.com/docs/developer-guide/creating-skills) · [agentskills.io](https://agentskills.io)
 
+## Hermes capabilities
+
+Hermes is a self-hosted agent with a persistent skill and memory loop, not just a catalog loader. The upstream project describes agent-created and refined skills, searchable conversation history, scheduled jobs, isolated subagents, multiple model providers, and a gateway for Telegram, Discord, Slack, WhatsApp, Signal, and the CLI.
+
+The latest tagged release when checked on **2026-10-01** is [v2026.9.24](https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.24), published September 24. It is a patch roll-up; upstream says the detailed notes for this release window are deferred to v0.22.0, so this page does not infer undocumented features from it. See the [upstream README](https://github.com/NousResearch/hermes-agent) and [releases](https://github.com/NousResearch/hermes-agent/releases) for current engine behavior.
+
 **This is an awesome list of the web**, not a marketing page for our packs.  
 [0xNyk](https://github.com/0xNyk/awesome-hermes-agent) and [VoltAgent](https://github.com/VoltAgent/awesome-agent-skills) are **directories** — start there to browse, not to install. This list is the **start set**: five named workflows, then [SkillSpector](https://github.com/NVIDIA/SkillSpector), then one install. Ninety seconds: [GETTING_STARTED.md](./GETTING_STARTED.md). Agents: [`docs/earned.json`](./docs/earned.json). Always-do: [`docs/LIST-CONTRACT.md`](./docs/LIST-CONTRACT.md).
 
