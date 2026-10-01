@@ -37,6 +37,11 @@ It must not require a Starlight wrapper, brand identity, subscription details, l
 - [`junhoyeo/tokscale`](https://github.com/junhoyeo/tokscale) publishes an MIT license and currently documents Hermes Agent data support. Its optional public-submission capability is out of scope for this pattern.
 - [`ryoppippi/ccusage`](https://github.com/ryoppippi/ccusage) publishes an MIT license and documents local usage analysis. Include it in a future implementation only after verifying the exact release supports each requested runtime; this reference makes no Hermes-coverage claim for it.
 
+### Current evidence refresh — 2026-10-01
+
+- `ccusage` release [`v20.0.26`](https://github.com/ryoppippi/ccusage/releases/tag/v20.0.26), published 2026-09-27, has an MIT application license at [`apps/ccusage/LICENSE`](https://github.com/ryoppippi/ccusage/blob/main/apps/ccusage/LICENSE). Its public [Hermes guide](https://ccusage.com/guide/hermes) documents the `hermes` source as **experimental**, reads local `$HERMES_HOME/state.db`, and exposes focused `daily`, `monthly`, and `session` reports. This is current parser-support evidence, not a stability or privacy guarantee.
+- `tokscale` release [`v4.17.0`](https://github.com/junhoyeo/tokscale/releases/tag/v4.17.0), published 2026-09-15, retains an MIT repository license. This review did not retain a cite-ready current parser path for Hermes, so do not include it in a standalone Hermes implementation until that exact support evidence is independently re-verified.
+
 ### Weekly promotion checkpoint — 2026-09-21
 
 **Owner:** Skill Portfolio Ops
