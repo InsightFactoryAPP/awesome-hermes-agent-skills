@@ -16,3 +16,4 @@
 - [ ] Treat a candidate as a legacy full copy unless its body is a minimal canonical redirect; validate every executable command independently before absorbing content into an umbrella or public pack
 - [ ] No broad user-profile or drive-root recursive searches ran on Frank host this week
 - [ ] Before writing a date-keyed Queen report, read any existing file and append a profile-labelled section rather than overwrite sibling-cron evidence.
+- [ ] In an unattended cron, do not wrap read-only profile checks in `sh -c`/`bash -c`: deny-mode approvals may block the wrapper. Invoke `HERMES_HOME=<explicit-profile> hermes …` directly and preserve blocked-wrapper evidence if it occurs.
