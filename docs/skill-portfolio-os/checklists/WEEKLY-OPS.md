@@ -3,6 +3,7 @@
 - [ ] Explicitly set `$HERMES_HOME` to the target profile, echo it, then run `hermes curator status` and `hermes curator run --dry-run`; record the profile scope and do not trust an inherited scheduled-job environment
 - [ ] Pins present (path-safety, todo-discipline, coding-agents, hermes-agent, skill-portfolio-ops)
 - [ ] Verify pin flags in `$HERMES_HOME/skills/.usage.json`; `curator status` may summarize pins but is not authoritative, and a missing pin summary is never compliance. Pin only eligible installed skills; record absent, bundled, or ineligible exceptions—and any cron-reported required-skill load skips—as profile-scoped runtime remediation.
+- [ ] In an unattended cron, prefer direct file readers or targeted profile-path checks for runtime metadata; if a read-only shell wrapper is approval-blocked, record that constraint and use an evidence-preserving alternative rather than treating the check as unavailable.
 - [ ] Review curator-managed agent-created skills; archive only a named dry-run-proposed transition (the reported candidate count is the evaluated pool, not archive eligibility).
 - [ ] Diff official leaves if Hermes updated; re-apply overlays
 - [ ] Record `hermes --version`; an available-but-unapplied update is a **deferred runtime signal**, not an update event. This weekly portfolio cron must not run `hermes update`, diff official leaves, or claim an overlay rebase until a separately approved runtime update changes the installed version
