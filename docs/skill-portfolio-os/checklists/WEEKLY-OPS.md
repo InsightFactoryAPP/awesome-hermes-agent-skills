@@ -18,3 +18,4 @@
 - [ ] Before writing a date-keyed Queen report, read any existing file and append a profile-labelled section rather than overwrite sibling-cron evidence.
 - [ ] In an unattended cron, do not wrap read-only profile checks in `sh -c`/`bash -c`: deny-mode approvals may block the wrapper. Invoke `HERMES_HOME=<explicit-profile> hermes …` directly and preserve blocked-wrapper evidence if it occurs.
 - [ ] Do not rely on `execute_code` for unattended profile audits: it can be approval-blocked. Use explicit-path `read_file`/`search_files` plus directly scoped Hermes commands as the evidence-preserving fallback.
+- [ ] Bound one explicitly scoped `hermes curator status` attempt in unattended cron; if it times out while `hermes curator run --dry-run` completes, preserve the timeout and use `$HERMES_HOME/skills/.usage.json` only for pin evidence rather than retrying a blocking status call or inferring a healthy status.
