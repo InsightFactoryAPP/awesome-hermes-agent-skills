@@ -45,7 +45,7 @@ Directories (browse, do not bulk-install): [0xNyk](https://github.com/0xNyk/awes
 
 Maturity labels: **production** · **beta** · **experimental**  
 Review states: `reviewed` · `watch` · `unverified` · `unsafe`  
-Research pulse: **2026-08-30**
+Research pulse: **2026-10-01** (new catalog sources rechecked; older row snapshots remain dated)
 
 ---
 
@@ -132,6 +132,8 @@ Prefer the project's own README for exact install (`hermes skills install …`, 
 | Project | Maturity | Why |
 | --- | --- | --- |
 | [agentskills.io](https://agentskills.io) | production | Open skill standard used by Hermes + many harnesses |
+| [OpenAI Skills](https://github.com/openai/skills) | review before install | Official Codex skill catalog with real `SKILL.md` files for design, security, browser, deploy, and documentation work; install named skills only. |
+| [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills) | review before install | Official web/frontend/deploy skill collection; inspect `vercel-cli-with-tokens` and human-gate every deployment. |
 | [wondelai/skills](https://github.com/wondelai/skills) | production | Large multi-harness skills library (~1.6k★) — browse, install **named** skills |
 | [0xNyk/awesome-hermes-agent](https://github.com/0xNyk/awesome-hermes-agent) | production | Independent directory — browse, do not bulk-install |
 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) skills docs | production | Built-in skill system + curator loop |
@@ -286,6 +288,27 @@ Use these to **find** primary sources. Do not copy the whole tree into a live ag
 | [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | ~46k★ | 2,000+ catalog — curate, never bulk-install |
 | [futantan/agent-skills.md](https://github.com/futantan/agent-skills.md) | ~0.3k★ | Discovery UI |
 | [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) | ~52k★ | **Quarantine** (OpenClaw-adjacent mass dump) |
+
+## 6-Pillar curation lens
+
+```mermaid
+mindmap
+  root((Earned skill choice))
+    Strategy
+      named job before install
+    Governance
+      source license and approval
+    Talent
+      operator judgment
+    Technology
+      portable SKILL.md
+    Data
+      evidence and reversible trial
+    Ethics
+      safety and disclosure
+```
+
+This is an editorial review frame; it does not certify a project or make installation safe by itself.
 
 ---
 
