@@ -8,8 +8,8 @@
 | Layer | Path | GitHub? | What belongs here | What does NOT |
 |-------|------|---------|-------------------|---------------|
 | **L0 Runtime** | `%LOCALAPPDATA%\hermes\` · `~\.starlight\` | No | Live skills, memory, sessions, crons, locks, queues | Product docs, free packs, strategy SSOT |
-| **L1 Estate control plane** | `C:\Users\frank\starlight\` (not under repos) | Fragile / often push-disabled | AGENTS.md, WORKSPACE_MAP, queen reports, **thin pointers**, FLEET index | Full operating systems, skill packs, CoE kits |
-| **L2 Repo estate (SSOT)** | `C:\Users\frank\starlight\repos\<repo>\` | **Yes — required** | All durable docs, code, public free packs, private strategy when that repo is private | Random new top-level home folders |
+| **L1 Estate control plane** | `<local-workspace>/starlight/` (not under repos) | Fragile / often push-disabled | AGENTS.md, workspace maps, operator reports, **thin pointers**, fleet index | Full operating systems, skill packs, CoE kits |
+| **L2 Repo estate (SSOT)** | `<local-workspace>/starlight/repos/<repo>/` | **Yes — required** | Durable docs, code, public free packs, private strategy only in private repositories | Random new top-level home folders |
 | **L3 Quarantine / litter** | `universe\`, home one-offs | No | Scratch only | Never treat as canon |
 
 ## Rules
@@ -48,7 +48,7 @@
 | Full OS only under `starlight/ops/` | Not pushed; agents treat as “done”; multi-machine drift | Copy to L2 + push; leave redirect |
 | Full OS only under `universe/` | Quarantined | Delete/redirect |
 | Dump entire Hermes skills tree to public | Secrets, stubs, host PII | Promote sanitized packs only |
-| New `C:\Users\frank\my-ops\` | Home litter | Use `starlight/repos/<repo>` |
+| New ad hoc folder under a user home | Home litter | Use `starlight/repos/<repo>` |
 | Writing product into estate root git | Push disabled / mixed history | Child repo worktree |
 
 ## Decision tree

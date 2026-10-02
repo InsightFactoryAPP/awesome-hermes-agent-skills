@@ -26,7 +26,7 @@ Hermes is a self-hosted agent with a persistent skill and memory loop, not just 
 The latest tagged release when checked on **2026-10-01** is [v2026.9.24](https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.24), published September 24. It is a patch roll-up; upstream says the detailed notes for this release window are deferred to v0.22.0, so this page does not infer undocumented features from it. See the [upstream README](https://github.com/NousResearch/hermes-agent) and [releases](https://github.com/NousResearch/hermes-agent/releases) for current engine behavior.
 
 **This is an awesome list of the web**, not a marketing page for our packs.  
-[0xNyk](https://github.com/0xNyk/awesome-hermes-agent) and [VoltAgent](https://github.com/VoltAgent/awesome-agent-skills) are **directories** — start there to browse, not to install. This list is the **start set**: five named workflows, then [SkillSpector](https://github.com/NVIDIA/SkillSpector), then one install. Ninety seconds: [GETTING_STARTED.md](./GETTING_STARTED.md). Agents: [`docs/earned.json`](./docs/earned.json). Always-do: [`docs/LIST-CONTRACT.md`](./docs/LIST-CONTRACT.md).
+[0xNyk](https://github.com/0xNyk/awesome-hermes-agent) and [VoltAgent](https://github.com/VoltAgent/awesome-agent-skills) are **directories** — start there to browse, not to install. The earned set separates five skill collections from the portable format spec and the SkillSpector scanner; begin by scanning, then install one named skill. Ninety seconds: [GETTING_STARTED.md](./GETTING_STARTED.md). Agents: [`docs/earned.json`](./docs/earned.json). Always-do: [`docs/LIST-CONTRACT.md`](./docs/LIST-CONTRACT.md).
 
 FrankX free packs are listed last under [Maintained in this repo](#maintained-in-this-repo-optional).
 
@@ -35,14 +35,16 @@ FrankX free packs are listed last under [Maintained in this repo](#maintained-in
 | [awesome-hermes-agents](https://github.com/frankxai/awesome-hermes-agents) | Agents, UIs, memory, deploy, multi-agent, operator docs |
 | **This repo** | Skills / plugins / skill factories (web-wide) |
 
-**Start here:** pick about five named skills. Do not install a 1,000-skill catalog.
+**Start here:** choose a named skill that solves a real job. The five skill collections below are starting points; the format spec and scanner are supporting tools, not skills to install.
 
-| Pack | Job | Pulse 2026-08-30 |
+| Resource | Job | Pulse 2026-08-30 |
 | --- | --- | --- |
 | [agentskills/agentskills](https://github.com/agentskills/agentskills) | Portable `SKILL.md` spec | Apache-2.0 · `reviewed` |
-| [anthropics/skills](https://github.com/anthropics/skills) | Official examples — install **named** skills | `reviewed` |
+| [anthropics/skills](https://github.com/anthropics/skills) | Official examples — install **one named** skill | `reviewed` |
 | [obra/superpowers](https://github.com/obra/superpowers) | TDD, debug, review, shipping | MIT · `reviewed` |
 | [garrytan/gstack](https://github.com/garrytan/gstack) | Product, design, eng, QA, browser | MIT · `reviewed` |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | Production engineering skills | MIT · `reviewed` |
+| [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | Plans that survive compaction | MIT · `reviewed` |
 | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | Scan a skill before it runs | Apache-2.0 · `reviewed` |
 
 Full table and domain map: [`docs/EARNED-SKILLS.md`](./docs/EARNED-SKILLS.md) · safety: [`docs/QUALITY-AND-SAFETY.md`](./docs/QUALITY-AND-SAFETY.md) · same rows as JSON: [`docs/earned.json`](./docs/earned.json)

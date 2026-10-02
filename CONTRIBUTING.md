@@ -1,6 +1,6 @@
 # Contributing
 
-This is a **web-first** awesome list of other people's skills. FrankX packs belong last, labeled optional.
+This is a **web-first** index of third-party skills, plus a small, clearly labeled section for this repository's own optional free packs. Third-party work comes first.
 
 ## Inclusion bar
 
@@ -10,7 +10,8 @@ A new entry needs all of:
 2. One sentence of **distinct** value (not “awesome AI skill”).
 3. License posture (SPDX or “read LICENSE”).
 4. A review state: `reviewed`, `watch`, `unverified`, or `unsafe`.
-5. A safety note if the skill can spend, post, delete, or exfiltrate.
+5. Purpose, inputs, outputs, required tools, safety boundaries, and provenance for a submitted skill pack.
+6. A safety note if the skill can spend, post, delete, or send data externally.
 
 Do **not** submit:
 
@@ -32,5 +33,7 @@ Changing the core 5–7 start set requires a matching edit to [docs/earned.json]
 1. Fork and branch from `main`.
 2. Add the row next to similar entries. Keep third-party work above FrankX packs.
 3. Open a PR with the primary URL, why it belongs, license, and review state.
+
+For a skill pack maintained in this repository, include the required skill sections above in `SKILL.md`. For a third-party listing, link to the primary source and provide enough detail to review its purpose, dependencies, side effects, license, and provenance. Scan before recommending installation; a scanner result is a signal, not a safety guarantee.
 
 Agent / UI / deploy entries belong in [awesome-hermes-agents](https://github.com/frankxai/awesome-hermes-agents).

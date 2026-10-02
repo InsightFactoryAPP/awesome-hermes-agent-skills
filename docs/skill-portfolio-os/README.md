@@ -2,7 +2,6 @@
 
 **Status:** Active · open-core  
 **GitHub SSOT:** [frankxai/awesome-hermes-agent-skills](https://github.com/frankxai/awesome-hermes-agent-skills) → `docs/skill-portfolio-os/`  
-**Local clone:** `C:\Users\frank\starlight\repos\awesome-hermes-agent-skills\docs\skill-portfolio-os\`  
 **Hermes skill:** `skill-portfolio-ops` (runtime under AppData)  
 **Private product SKUs:** `FrankX/docs/products/` (e.g. CoE kit) — not this public tree  
 
